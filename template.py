@@ -42,6 +42,7 @@ list_of_files = [
     "pyproject.toml",
     "config/model.yaml",
     "config/schema.yaml",
+    "logging_config.yaml"
 ]
 
 for filepath in list_of_files:
