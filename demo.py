@@ -11,19 +11,19 @@ logging.critical("This is a critical message.")
 # --------------------------------------------------------------------------------
 
 # # below code is to check the exception config
+"""
 from src.logger import logging
 from src.exception import ProjectException
 import sys
 
 try:
-    a = '1'+'Z'
+    a =  1 +'Z'
 except Exception as e:
     logging.info(e)
     raise ProjectException(e, sys) from e
+"""
 
 # --------------------------------------------------------------------------------
-
-# from src.pipline.training_pipeline import TrainPipeline
-
-# pipline = TrainPipeline()
-# pipline.run_pipeline()
+from src.pipline.training_pipeline import TrainPipeline
+pipline = TrainPipeline()
+pipline.run_pipeline()
