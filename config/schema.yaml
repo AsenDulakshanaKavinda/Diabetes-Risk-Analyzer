@@ -1,0 +1,42 @@
+columns:
+- _id: int
+- Pregnancies: int
+- Glucose: float
+- BloodPressure: int
+- SkinThickness: int
+- Insulin: int
+- BMI: float
+- DiabetesPedigreeFunction: float
+- Age: int
+- Outcome: int
+
+numerical_columns:
+- _id
+- Pregnancies
+- Glucose
+- BloodPressure
+- SkinThickness
+- Insulin
+- BMI
+- DiabetesPedigreeFunction
+- Age
+
+
+categorical_columns:
+- Outcome
+
+drop_columns:
+- _id
+
+
+# for data transformation
+num_features:
+
+
+mm_columns:
+
+
+
+
+
+
