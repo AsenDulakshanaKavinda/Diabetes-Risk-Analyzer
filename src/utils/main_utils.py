@@ -71,7 +71,7 @@ def save_object(file_path: str, obj: object) -> None:
     logging.info("Entered the save_object method of utils")
 
     try:
-        os.makedirs(os.pat.dirname(file_path), exist_ok=True)
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
         with open(file_path, 'wb') as file_obj:
             dill.dump(obj, file_obj)
         logging.info("Exited the save_object method of utils")
